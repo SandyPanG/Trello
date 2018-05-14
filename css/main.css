@@ -1,5 +1,61 @@
-/*Header*/
+/*
 
+/*Body*/
+/*
+body {
+  background-color: #1d8dc2;
+  margin: 0;
+}
+*/
+/*Header*/
+/*
 header {
-  background-color: #026aa7;
+  box-sizing: border-box;
+  background-color: #147aa7;
+  height: 30px;
+  right: 0;
+  top: 0;
+  outline: 1px solid red;
+  width: 100%;
+}
+
+
+
+.nav {
+  display: inline-block;
+  width: 30%;
+}
+
+.logo {
+  width: 10%;
+}
+
+.trello {
+  display: inline-block;
+  width: 30%;
+
+}
+
+.trello > img {
+  width: 7%;
+  margin: auto;
+
+}
+
+.bLeft {
+  background-color: white;
+  display: inline-block;
+  width: 30%;
+}
+
+a > img {
+  border-radius: 50%;
+  max-height: 20%;
+  position: relative;
+  top: 1em;
+  width: 20%;
+}
+*/
+.hide {
+  display: none;
 }
