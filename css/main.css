@@ -1,22 +1,24 @@
-/*
+
 
 /*Body*/
-/*
-body {
-  background-color: #1d8dc2;
-  margin: 0;
+
+* {
+   box-sizing: border-box;
+   margin: 0;
 }
-*/
-/*Header*/
-/*
+
+body {
+   background: #0079bf;
+}
+
 header {
-  box-sizing: border-box;
-  background-color: #147aa7;
-  height: 30px;
-  right: 0;
-  top: 0;
-  outline: 1px solid red;
-  width: 100%;
+   display: inline-flex;
+   background-color: #0c6d9e;
+   font-family: "Open Sans", sans-serif;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 40px;
 }
 
 
@@ -55,7 +57,11 @@ a > img {
   top: 1em;
   width: 20%;
 }
-*/
+
 .hide {
   display: none;
 }
+
+ .form {
+   margin-top: 100px;
+ }
