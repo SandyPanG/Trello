@@ -1,26 +1,23 @@
 //Añadir lista
 var input = document.getElementById('list')
 input.addEventListener('click',function () {
-  console.log(input);
+  //console.log(input);
   var listName = document.getElementById('list-name')
   listName.style.display = 'block';
 })
 
-var save = document.getElementById('list');
+var save = document.getElementById('save');
 save.addEventListener('click', function(){
 //tomar el texto ingresado en el textarea
 newList = document.getElementById('list').value;
 //limpiar el textarea
-newList = document.getElementById('list').value = '';
-//llamar a nuevo div
-  var message = document.getElementById('msg');
-
+document.getElementById('list').value = '';
 //nueva lista(el h4)
   var title = document.createElement('h4');
   var textNewList = document.createTextNode(newList);
   var listName = document.getElementById('msg');
   title.appendChild(textNewList);
-  msg.appendChild(title);
+  listName.appendChild(title);
 });
 
 

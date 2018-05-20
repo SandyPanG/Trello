@@ -21,42 +21,28 @@ header {
    height: 40px;
 }
 
-
-
 .nav {
-  display: inline-block;
-  width: 30%;
-}
 
-.logo {
-  width: 10%;
 }
 
 .trello {
-  display: inline-block;
-  float: left;
-  width: 30%;
+  width: 60%;
 
 }
 
 .trello > img {
-  width: 7%;
+  display: block;
   margin: auto;
+  margin-top: 1%;
+  width: 10%;
+}
 
+.trello > img:hover {
+  opacity: 1.0;
 }
 
 .right {
-  background-color: white;
-  display: inline-block;
-  width: 30%;
-}
-
-a > img {
-  border-radius: 50%;
-  max-height: 20%;
-  position: relative;
-  top: 1em;
-  width: 20%;
+  margin-left: 10%;
 }
 
 .hide {
