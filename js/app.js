@@ -25,8 +25,8 @@ document.getElementById('list').value = '';
 //Añadir tarjeta
 //crear textarea y anchord
   var addTask = document.createElement('a');
-    a.setAttribute("href", "#");
-  var task = document.createTextNode('Añadir una tarea');
+    addTask.setAttribute("href", "#");
+  var task = document.createTextNode('Añadir una tarea...');
 
 //asignando parents
   addTask.appendChild(task);
@@ -35,6 +35,9 @@ document.getElementById('list').value = '';
 //función
 save.addEventListener('click', function(){
   newTask = document.getElementByTagName('a');
-})
+
+//nuevo div
+  var newDiv = document.createElement('div');
+});
 });
 });
