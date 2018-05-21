@@ -64,10 +64,9 @@ var save = document.getElementById('save');
   newDiv.appendChild(form);
   listName.appendChild(newDiv);
 
-  newTask.style.display = "none"; // agregas esta linea si quieres que desaparezca el anadir una tarea
+  newTask.style.display = "none"; // para que desaparezca el anadir una tarea
 
 //function
-// para la siguiente version utiliza el botton que creaste como sv
 
   sv.addEventListener('click', function(){
   //document.getElementByClassName('second');
