@@ -7,11 +7,11 @@ input.addEventListener('click',function () {
 
 
 var save = document.getElementById('save');
-save.addEventListener('click', function(){
+    save.addEventListener('click', function(){
 //tomar el texto ingresado en el textarea
-newList = document.getElementById('list').value;
+        newList = document.getElementById('list').value;
 //limpiar el textarea
-document.getElementById('list').value = '';
+        document.getElementById('list').value = '';
 //que aparezca link ingresar nueva tarjeta
 
 //nueva lista(el h4)
@@ -30,35 +30,49 @@ document.getElementById('list').value = '';
 
 //asignando parents
   addTask.appendChild(task);
+    addTask.id = 'addTask';
   listName.appendChild(addTask);
 
 //función
-save.addEventListener('click', function(){
-  newTask = document.getElementByTagName('a');
+    //  save.addEventListener('click', function(){
+      //    newTask = document.getElementByTagName('a');
+
+//Nuevo form
+
+//función
+ var newTask = document.getElementById("addTask");
+  newTask.addEventListener('click', function(){
+
 
 //nuevo div
   var newDiv = document.createElement('div');
     newDiv.classList.add('second');
   var form = document.createElement('form');
-  var inpt = document.createElement('input')
+  var inpt = document.createElement('input');
     inpt.setAttribute = ('type','placeholder');
     inpt.setAttribute = ('value','Añadir lista');
   //var add = document.createTextNode('Añadir lista...');
   var sv = document.createElement('button');
-    sv.setAttribute('type','submit');
+    sv.setAttribute('type','button');
     sv.setAttribute('value','Guardar');
   var close = document.createElement('button');
     close.setAttribute('value','&times');
 //asignando parents
-  close.appendChild(form);
-  sv.appendChild(form);
-  inpt.appendChild(form);
-  form.appendChild(newDiv);
+  form.appendChild(inpt);
+  form.appendChild(sv);
+  form.appendChild(close);
+  newDiv.appendChild(form);
+  listName.appendChild(newDiv);
+
+  newTask.style.display = "none"; // agregas esta linea si quieres que desaparezca el anadir una tarea
+
 //function
-save.addEventListener('click', function(){
-  document.getElementByClassName('second');
-  
-});
-});
-});
+// para la siguiente version utiliza el botton que creaste como sv
+
+  sv.addEventListener('click', function(){
+  //document.getElementByClassName('second');
+
+      });
+    });
+  });
 });
