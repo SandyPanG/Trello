@@ -4,7 +4,7 @@ input.addEventListener('click',function () {
   //console.log(input);
   var listName = document.getElementById('list-name')
   listName.style.display = 'block';
-})
+
 
 var save = document.getElementById('save');
 save.addEventListener('click', function(){
@@ -12,51 +12,29 @@ save.addEventListener('click', function(){
 newList = document.getElementById('list').value;
 //limpiar el textarea
 document.getElementById('list').value = '';
+//que aparezca link ingresar nueva tarjeta
+
 //nueva lista(el h4)
   var title = document.createElement('h4');
   var textNewList = document.createTextNode(newList);
   var listName = document.getElementById('msg');
-  title.appendChild(textNewList);
-  listName.appendChild(title);
-});
+//asignando a los parents del h4
+    title.appendChild(textNewList);
+    listName.appendChild(title);
 
+//Añadir tarjeta
+//crear textarea y anchord
+  var addTask = document.createElement('a');
+    a.setAttribute("href", "#");
+  var task = document.createTextNode('Añadir una tarea');
 
+//asignando parents
+  addTask.appendChild(task);
+  listName.appendChild(addTask);
 
-
-/*
-//función del botón guardar
-var save = document.getElementById('save');
+//función
 save.addEventListener('click', function(){
-  var newlist = document.getElementById('list').value;
-  //limpiar el textarea
-	document.getElementById('list').value = '';
-
-
-
-
-
-
- //contenedor que esta en el html
-var msg = document.getElementById('msg');
-
-  //creamos el div que contiene cada comentario
-
-	var newComments = document.createElement('div');
-
-  //nodos de texto del textarea
-
-	var textNewComment = document.createTextNode(namelist);
-
-
-
-	var contenedorElemento = document.createElement('p');
-
-	contenedorElemento.appendChild(textNewComment);
-
-	newComments.appendChild(contenedorElemento);
-	cont.appendChild(newComments);
+  newTask = document.getElementByTagName('a');
 })
-
-
-})
-*/
+});
+});
