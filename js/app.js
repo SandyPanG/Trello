@@ -38,6 +38,27 @@ save.addEventListener('click', function(){
 
 //nuevo div
   var newDiv = document.createElement('div');
+    newDiv.classList.add('second');
+  var form = document.createElement('form');
+  var inpt = document.createElement('input')
+    inpt.setAttribute = ('type','placeholder');
+    inpt.setAttribute = ('value','Añadir lista');
+  //var add = document.createTextNode('Añadir lista...');
+  var sv = document.createElement('button');
+    sv.setAttribute('type','submit');
+    sv.setAttribute('value','Guardar');
+  var close = document.createElement('button');
+    close.setAttribute('value','&times');
+//asignando parents
+  close.appendChild(form);
+  sv.appendChild(form);
+  inpt.appendChild(form);
+  form.appendChild(newDiv);
+//function
+save.addEventListener('click', function(){
+  document.getElementByClassName('second');
+  
+});
 });
 });
 });
